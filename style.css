@@ -117,6 +117,29 @@ hr {
   float: right;
 }
 
+/* Pages
+-------------------------------------------------------------- */
+.page header {
+  padding: 0px;
+  background-color: transparent;
+  border-bottom: 0px;
+}
+
+.page header img {
+  width: 100%;
+  border-bottom: 4px solid #eee;
+  border-radius: 0px;
+  box-shadow: none;
+  margin: 0px;
+  background-position: center;  
+}
+
+.page img.caption {
+  border: 2px solid #eee;
+  border-radius: 2px;
+}
+
+
 /* Typography
 -------------------------------------------------------------- */
 .heading {
@@ -137,6 +160,10 @@ a {
 a:focus,
 a:hover {
   color: #760c0c;
+}
+
+p {
+  margin-bottom: 0px;
 }
 
 
