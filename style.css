@@ -1,6 +1,6 @@
 /* Import Source Sans Pro
 ----------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,900);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700);
 
 /* Layout
 -------------------------------------------------------------- */
@@ -11,146 +11,12 @@
 body {
   font: 100% sans-serif;
   margin: 0em;
-  background-color: #fefefe;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-header {
-  background-color: #eb2c2c;
-  border-bottom: 1px solid #bc1212;
-  margin-bottom: 3em;
-  text-align: center;
-}
-
-header h1 {
-  text-transform: uppercase;
-  color: white;
-  font-size: 2.5em;
-  margin-top: .4em;
-  margin-bottom: 0px;
-}
-
-header img {
-  width: 8em;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-border-radius: 99em;
-  -moz-border-radius: 99em;
-  border-radius: 99em;
-  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
-}
-
-header p {
-  color: #febcbc;
-  font-style: italic;
-  margin-top: .1em;
-  padding-bottom: .5em;
-}
-
-section {
-  margin-bottom: 1em;
+  background-color: #fff;
   color: #333;
 }
 
-section h1 {
-  font-size: 2em;
-  line-height: .8em;
-  margin-bottom: .4em;
-}
-
-section h3 {
-  font-size: 1.3em;
-  margin-bottom: .1em;
-  margin-top: .4em;
-}
-
-.grid-unit {
-  border: 2px solid #eee;
-  border-radius: 2px;
-}
-
-p {
-  font-size: 1.2em;
-  line-height: 1.5;
-  margin-top: 0em;
-}
-
-section ul li {
-  font-size: 1.2em;
-  margin-left: -10px;
-  line-height: 1.5;
-}
-
-.small {
-  font-size: .6em;
-}
-
-footer {
-  border-top: 1px solid #ccc;
-  color: #555;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-hr {
-  border-top: 1px solid #ddd;
-  border-bottom: none;
-}
-
-.center {
-  text-align: center;
-}
-
-.left-break {
-  text-align: center;
-}
-
-.right-break {
-  text-align: center;
-}
-
-.push-right {
-  float: right;
-}
-
-/* Pages
--------------------------------------------------------------- */
-.page header {
-  padding: 0px;
-  background-color: transparent;
-  border-bottom: 0px;
-}
-
-.page header img {
-  width: 100%;
-  border-bottom: 4px solid #eee;
-  border-radius: 0px;
-  box-shadow: none;
-  margin: 0px;
-  background-position: center;  
-}
-
-.page img.caption {
-  border: 2px solid #eee;
-  border-radius: 2px;
-}
-
-
-/* Typography
--------------------------------------------------------------- */
-.heading {
-  font-size: 3em;
-  margin: 0;
-}
-
-.sub-heading {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -164,9 +30,79 @@ a:hover {
 }
 
 p {
-  margin-bottom: 0px;
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin-top: 0em;
 }
 
+hr {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+}
+
+header {
+  background-color: #eb2c2c;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5em;
+  margin-top: .4em;
+  margin-bottom: 0em;
+}
+
+header img {
+  width: 8em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 99em;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
+  -webkitbox-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+  color: #febcbc;
+  padding-bottom: 1.3em;
+}
+
+section h1 {
+  font-size: 2em;
+  line-height: .8em;
+  margin-bottom: .4em;
+}
+
+/* For portfolio images */
+img.grid-unit {
+  border: 2px solid #eee;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+
+/* Same font-size and line-height as p element */
+section ul li {
+  font-size: 1.2em;
+  margin-left: -10px;
+  line-height: 1.4;
+}
+
+footer {
+  padding-top: 8px;
+}
+
+.center {
+  text-align: center;
+}
 
 /*------------------------------------------------------------
 
