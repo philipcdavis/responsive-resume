@@ -1,6 +1,15 @@
 /* Import Source Sans Pro
 ----------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700);
+@import url(http://fonts.googleapis.com/css?family=Lato:);
+
+/* Import Icon fonts
+----------------------------------------------------------------*/
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
 
 /* Layout
 -------------------------------------------------------------- */
@@ -11,16 +20,17 @@
 body {
   font: 100% sans-serif;
   margin: 0em;
-  background-color: #fff;
-  color: #333;
+  background-color: #572f2b;
+  color: #e7e7dc;
+  height: 100%;
 }
 
 h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
-  color: #eb2c2c;
+  color: #e33830;
   text-decoration: none;
 }
 
@@ -41,65 +51,80 @@ hr {
 }
 
 header {
-  background-color: #eb2c2c;
-  margin-bottom: 3em;
-}
-
-header h1 {
-  text-transform: uppercase;
-  color: white;
-  font-size: 2.5em;
-  margin-top: .4em;
-  margin-bottom: 0em;
+  background-color: #e33830;
+  background-image: url("img/bg.jpg");
+  background-repeat: repeat;
+  border-bottom: #3f241f 4px solid;
+  padding: 2em 0em;
 }
 
 header img {
-  width: 8em;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 99em;
-  -webkit-border-radius: 99em;
-  -moz-border-radius: 99em;
-  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
-  -webkitbox-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
+  width: 91px;
+  margin: 0 auto;
 }
 
-header p {
-  color: #febcbc;
-  padding-bottom: 1.3em;
+header a.btn-download {
+  background-color: #572f2b;
+  display: block;
+  color: #f3e2d8;
+  font-size: .9em;
+  border-radius: 3px;
+  width: 100%;
+  box-shadow: 0px 3px 0px #4b2925;
+  text-align: center;
+  padding: 11px 0px;
+}
+
+header a.btn-download:hover {
+  background-color: #6c3733;
+  box-shadow: 0px 3px 0px #59312b;
+}
+
+
+header a.btn-white {
+  background-color: #e7e7dc;
+  display: block;
+  color: #e33830;
+  font-size: .9em;
+  border-radius: 3px;
+  box-shadow: 0px 3px 0px #b92626;
+  text-align: center;
+  padding: 11px 0px;
+  width: 49%;
+  float: left;
+  margin-top: 10px;
+}
+
+header a.btn-white:hover {
+  opacity: .9;
+}
+
+a.btn-white:first-child {
+  margin-right: 2%;
+}
+
+section {
+  padding: 1px 0px;
 }
 
 section h1 {
   font-size: 2em;
-  line-height: .8em;
   margin-bottom: .4em;
-}
-
-/* For portfolio images */
-img.grid-unit {
-  border: 2px solid #eee;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-}
-
-/* Same font-size and line-height as p element */
-section ul li {
-  font-size: 1.2em;
-  margin-left: -10px;
-  line-height: 1.4;
+  
 }
 
 footer {
   padding-top: 8px;
 }
 
+.float-right {
+     float: right;
+}
 .center {
+  text-align: center;
+}
+
+.center-break {
   text-align: center;
 }
 
@@ -136,14 +161,22 @@ canvas {
 /* Grid > 6 Column Mobile First
 -------------------------------------------------------------- */
 .container {
-  max-width: 45em;
+  max-width: 50em;
   width:92%;
   margin:0px auto;
   position: relative;
 }
 
+.container-small {
+  max-width: 20em;
+  width:92%;
+  margin:0px auto;
+  position: relative;
+  text-align: center;
+}
+
 .row {
-  clear: both;
+  margin-left: 0px;
 }
 
 @media screen and (min-width: 480px) {
@@ -151,53 +184,15 @@ canvas {
     width: 98%;
   }
   
-  .left-break {
-    text-align: left;
-  }
+  header {
+    padding: 4.5em 0em;
+  } 
   
-  .right-break {
-    text-align: right;
-  }
-
-  .grid-1,
-  .grid-2,
-  .grid-3,
-  .grid-4,
-  .grid-5,
-  .grid-6,
-  .grid-half,
-  .grid-full,
-  .grid-unit {
-    float: left;
-    width:96.969696969697%;
-    margin:0 1.515151515152% 1em;
-  }
-
-  .gallery .grid-unit,
-  .grid-half {
-    width:46.969696969697%;
-    margin: 0 1.515151515152% 1em;
-  }
-
-  .grid-flow-opposite{
-    float:right
-  }
 
 }
 
-@media screen and (min-width: 640px) {
-  .grid-1     { width: 13.636363636364%; }
-  .grid-2     { width: 30.30303030303%; }
-  .grid-3,
-  .grid-half  { width: 46.969696969697%; }
-  .grid-4     { width: 63.636363636364%; }
-  .grid-5     { width: 80.30303030303%; }
-  .grid-6,
-  .grid-full  { width: 96.969696969697%; }
-
-  .gallery .grid-unit {
-    width: 30.30303030303%;
-  }
+@media screen and (min-width: 830px) {
+  
 
 }
 
