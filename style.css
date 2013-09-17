@@ -43,6 +43,7 @@ hr {
 header {
   background-color: #eb2c2c;
   margin-bottom: 3em;
+  text-align: center;
 }
 
 header h1 {
@@ -54,10 +55,8 @@ header h1 {
 }
 
 header img {
-  width: 8em;
+  width: 7.5em;
   margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 99em;
   -webkit-border-radius: 99em;
   -moz-border-radius: 99em;
