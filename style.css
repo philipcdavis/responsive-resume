@@ -1,7 +1,3 @@
-/* Import Source Sans Pro
-----------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700);
-
 /* Layout
 -------------------------------------------------------------- */
 *, *:before, *:after {
@@ -71,6 +67,7 @@ header img {
 header p {
   color: #febcbc;
   padding-bottom: 1.3em;
+  font-style: italic;
 }
 
 section h1 {
