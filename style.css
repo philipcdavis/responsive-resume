@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -37,17 +37,23 @@ hr {
 }
 
 header {
-  background-color: #eb2c2c;
+  background: url(img/background.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
   margin-bottom: 3em;
   text-align: center;
+  height: 700px;
+  padding-top: 450px;
 }
 
 header h1 {
-  text-transform: uppercase;
   color: white;
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin-top: .4em;
   margin-bottom: 0em;
+  letter-spacing: 3px;
+  opacity: .9;
+  text-shadow: 0 0 3px rgba(0,0,0, .4);
 }
 
 header img {
@@ -65,9 +71,11 @@ header img {
 }
 
 header p {
-  color: #febcbc;
+  color: #fff;
+  font-size: 1.7em;
   padding-bottom: 1.3em;
-  font-style: italic;
+  padding-top: .5em;
+  opacity: .7;
 }
 
 section h1 {
