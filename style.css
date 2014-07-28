@@ -115,7 +115,7 @@ footer hr {
 
 .container {
   max-width: 50em;
-  width:98%;
+  width:92%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -144,22 +144,18 @@ footer hr {
 .grid-5,
 .grid-6 {
   float: left;
-  width:98%;
-  margin: 0 1%;
+  width:100%;
+  padding: 0 1%;
 }
 
 @media screen and (min-width: 480px) {
   
-  .container {
-    width: 92%;
-  }
-  
-  .grid-1 { width: 14.6666666667%; }
-  .grid-2 { width: 31.33333334%; }
-  .grid-3 { width: 48%; }
-  .grid-4 { width: 64.673%; }
-  .grid-5 { width: 80.30303030303%; }
-  .grid-6 { width: 96.969696969697%; }
+  .grid-1 { width: 16.6666666%; }
+  .grid-2 { width: 33.3333333%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 66.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
 
 }
 
