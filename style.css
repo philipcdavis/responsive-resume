@@ -52,28 +52,16 @@ header {
   padding-top: 450px;
 }
 
+
+
 header h1 {
   color: white;
   font-size: 3.5em;
   margin-top: .4em;
   margin-bottom: 0em;
   letter-spacing: 3px;
-  opacity: .9;
-  text-shadow: 0 0 3px rgba(0,0,0, .4);
-}
-
-header img {
-  width: 7.5em;
-  margin-top: 2em;
-  border-radius: 99em;
-  -webkit-border-radius: 99em;
-  -moz-border-radius: 99em;
-  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
-  -webkitbox-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 0 5px #FFF, 0 8px 1px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  text-shadow: 0 0 4px rgba(0,0,0, 0.7);
 }
 
 header p {
@@ -81,7 +69,7 @@ header p {
   font-size: 1.7em;
   padding-bottom: 1.3em;
   padding-top: .5em;
-  opacity: .7;
+  opacity: .8;
 }
 
 section h1 {
@@ -98,7 +86,8 @@ section ul li {
 }
 
 footer {
-  padding-top: 8px;
+  margin-bottom: 1em;
+  color: #888;
 }
 
 footer hr {
@@ -126,12 +115,6 @@ footer hr {
   margin-left:  -1%;
 }
 
-[class*='grid'] {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
 .gallery [class*="grid"] {
   margin-bottom: 1%;
   margin-top: 1%;
@@ -146,6 +129,8 @@ footer hr {
   float: left;
   width:100%;
   padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
