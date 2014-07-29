@@ -16,13 +16,13 @@ h1 {
 }
 
 a {
-  color: #eb2c2c;
+  color: #3d6dbe;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #760c0c;
+  color: #6594e0;
 }
 
 p {
