@@ -144,6 +144,17 @@ footer hr {
 
 }
 
+/* Custom Blocks */
+
+/* Experiance Tables */
+.experiance {
+  border-bottom: dotted 1px #ccc;
+}
+
+.experiance:last-of-type {
+  border: none;
+}
+
 /* Micro Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
 -------------------------------------------------------------- */
 .cf:before, .cf:after { content:""; display:table; }
