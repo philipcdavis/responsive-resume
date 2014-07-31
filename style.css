@@ -52,8 +52,6 @@ header {
   padding-top: 450px;
 }
 
-
-
 header h1 {
   color: white;
   font-size: 3.5em;
@@ -97,6 +95,38 @@ footer hr {
 
 .center {
   text-align: center;
+}
+
+/* Spotlight */
+.spotlight {
+  background-color: #f3e2d8;
+  padding: 100px;
+  margin: 50px 0;
+}
+
+
+.spotlight h1 {
+  color: #e4382c;
+}
+
+.spotlight p {
+  color: #6d5e53;
+  font-size: 1.3em;
+}
+
+.spotlight button {
+  background-color: transparent;
+  border: 3px solid #e4382c;
+  padding: 7px 25px;
+  border-radius: 3px;
+  color: #e4382c;
+  font-size: 1.1em;
+  opacity: .8;
+}
+
+.spotlight button:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 
