@@ -161,6 +161,24 @@ footer hr {
   clear: both;
   margin-right: -1%;
   margin-left:  -1%;
+  
+}
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ */
+.row {
+  *zoom: 1;
 }
 
 .gallery [class*="grid"] {
@@ -199,12 +217,21 @@ footer hr {
   border-bottom: dotted 1px #ccc;
 }
 
+.experiance h2 {
+  margin-bottom: 0;
+}
+
 .experiance:last-of-type {
   border: none;
 }
 
-/* Micro Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
--------------------------------------------------------------- */
-.cf:before, .cf:after { content:""; display:table; }
-.cf:after { clear:both; }
-.cf { zoom:1; } /* For IE 6/7 (trigger hasLayout) */
+/* Education Block */
+.education h2 {
+  width: 80%;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 1.8em;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+}
