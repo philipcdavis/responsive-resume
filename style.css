@@ -11,7 +11,7 @@ body {
   color: #666;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: 'Lato', sans-serif;
 }
 
@@ -129,6 +129,24 @@ footer hr {
   cursor: pointer;
 }
 
+.testimonial img {
+  width: 100px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.testimonial {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #888;
+  margin-top: -15px;
+}
 
 /* Grid */
 
