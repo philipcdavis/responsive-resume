@@ -97,58 +97,7 @@ footer hr {
   text-align: center;
 }
 
-/* Spotlight */
-.spotlight {
-  background-color: #f3e2d8;
-  padding: 100px;
-  margin: 50px 0;
-}
-
-
-.spotlight h1 {
-  color: #e4382c;
-}
-
-.spotlight p {
-  color: #6d5e53;
-  font-size: 1.3em;
-}
-
-.spotlight button {
-  background-color: transparent;
-  border: 3px solid #e4382c;
-  padding: 7px 25px;
-  border-radius: 3px;
-  color: #e4382c;
-  font-size: 1.1em;
-  opacity: .8;
-}
-
-.spotlight button:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.testimonial img {
-  width: 100px;
-  border-radius: 3px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.testimonial {
-  text-align: center;
-  margin-top: 25px;
-}
-
-.testimonial p {
-  font-style: italic;
-  color: #888;
-  margin-top: -15px;
-}
-
-/* Grid */
+/* ------------------- Grid -------------------*/
 
 .container {
   max-width: 50em;
@@ -181,11 +130,6 @@ footer hr {
   *zoom: 1;
 }
 
-.gallery [class*="grid"] {
-  margin-bottom: 1%;
-  margin-top: 1%;
-}
-
 .grid-1,
 .grid-2,
 .grid-3,
@@ -199,8 +143,7 @@ footer hr {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
-  
+@media screen and (min-width: 40em) {
   .grid-1 { width: 16.6666666%; }
   .grid-2 { width: 33.3333333%; }
   .grid-3 { width: 50%; }
@@ -210,20 +153,57 @@ footer hr {
 
 }
 
-/* Custom Blocks */
+/* -------------------Custom Blocks----------------- */
 
-/* Experiance Tables */
-.experiance {
+/* Gallery */
+
+.gallery [class*="grid"] {
+  margin-bottom: 1%;
+  margin-top: 1%;
+  width: 50%;
+}
+
+.gallery a img {
+  -webkit-transform: translateZ(0); /* Fix chrome pixel shift */
+  transition: opacity .2s ease;
+  opacity: 1;
+}
+
+.gallery a img:hover {
+  opacity: .8;
+}
+
+@media screen and (min-width: 40em) {
+  .gallery .grid-2 {
+    width: 33.3333333%;
+  }
+}
+
+/* Experiance */
+.experiance [class*="row"] {
   border-bottom: dotted 1px #ccc;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .experiance h2 {
   margin-bottom: 0;
 }
 
-.experiance:last-of-type {
+.experiance h2, .experiance p {
+  text-align: center;
+}
+
+.experiance [class*="row"]:last-of-type {
   border: none;
 }
+
+@media screen and (min-width: 40em) {
+  .experiance h2, .experiance p {
+    text-align: left;
+  }
+}
+
 
 /* Education Block */
 .education h2 {
@@ -235,3 +215,87 @@ footer hr {
   text-align: center;
   margin: 0 auto;
 }
+
+
+/* Testimonials */
+.testimonial img {
+  width: 100px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.testimonial {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #888;
+  margin-top: -15px;
+  margin-bottom: 3em;
+}
+
+/* Spotlight */
+.spotlight {
+  background-color: #f3e2d8;
+  padding: 3em 1em;
+  margin-bottom: 3em;
+}
+
+.spotlight .grid-3 {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.spotlight h1 {
+  color: #e4382c;
+  text-align: center;
+}
+
+.spotlight p {
+  color: #6d5e53;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.spotlight button {
+  background-color: transparent;
+  border: 3px solid #e4382c;
+  padding: 7px 0px;
+  border-radius: 3px;
+  color: #e4382c;
+  font-size: 1.1em;
+  opacity: .8;
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+}
+
+.spotlight button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 50em) {
+  .spotlight {
+    padding: 5em;
+  }
+  
+  .spotlight .grid-3 {
+    margin: 50px 0;
+    width: 50%;
+  }
+  
+  .spotlight h1, .spotlight p {
+    text-align: left;
+  }
+  
+  .spotlight button {
+    margin: 0px;
+  }
+  
+}
+
