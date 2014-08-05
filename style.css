@@ -1,4 +1,4 @@
-/* Layout
+/* Border Box
 -------------------------------------------------------------- */
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -13,6 +13,7 @@ body {
 
 h1, h2, h3 {
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -48,30 +49,34 @@ header {
   background-size: cover;
   margin-bottom: 4em;
   text-align: center;
-  height: 700px;
-  padding-top: 450px;
+  height: 500px;
+ 
 }
 
 header h1 {
   color: white;
-  font-size: 3.5em;
-  margin-top: .4em;
-  margin-bottom: 0em;
-  letter-spacing: 3px;
+  font-size: 2em;
+  margin: 0;
+  letter-spacing: 1px;
   opacity: 1;
-  text-shadow: 0 0 4px rgba(0,0,0, 0.7);
+  text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
+  position: relative;
+  top: 370px;
+  font-weight: 700;
 }
 
 header p {
   color: #fff;
-  font-size: 1.7em;
+  font-size: 1.1em;
   padding-bottom: 1.3em;
   padding-top: .5em;
-  opacity: .8;
+  opacity: .9;
+  position: relative;
+  top: 360px;
 }
 
 section h1 {
-  font-size: 2.2em;
+  font-size: 1.8em;
   line-height: .8em;
   margin-bottom: .6em;
 }
@@ -96,6 +101,23 @@ footer hr {
 .center {
   text-align: center;
 }
+
+@media screen and (min-width: 50em) {
+  header {
+    height: 700px;
+  }
+  
+  header h1 {
+    font-size: 3.2em;
+    top: 540px;
+  }
+  
+  header p {
+    top: 530px;
+    font-size: 1.5em;
+  }
+}
+
 
 /* ------------------- Grid -------------------*/
 
@@ -206,36 +228,41 @@ footer hr {
 
 
 /* Education Block */
-.education h2 {
-  width: 80%;
+.education {
   font-family: "Lato", sans-serif;
   line-height: 1.5;
-  font-size: 1.8em;
   margin-bottom: 0;
   text-align: center;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 40em) {
+  .education {
+    width: 70%;
+  }
+}
+
 
 /* Testimonials */
+.testimonial {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .testimonial img {
   width: 100px;
   border-radius: 3px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-}
-
-.testimonial {
-  text-align: center;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .testimonial p {
   font-style: italic;
   color: #888;
   margin-top: -15px;
-  margin-bottom: 3em;
+  margin-bottom: 40px;
 }
 
 /* Spotlight */
@@ -257,7 +284,7 @@ footer hr {
 
 .spotlight p {
   color: #6d5e53;
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
 }
 
