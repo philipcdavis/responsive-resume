@@ -43,31 +43,24 @@ hr {
 }
 
 header {
-  background: url(img/background.jpg) no-repeat;
+  background-color: #333f6c;
   background-position: center center;
   background-size: cover;
-  margin-bottom: 4em;
   text-align: center;
-  height: 700px;
-  padding-top: 450px;
+  height: 500px;
+  padding-top: 50px;
 }
 
 header h1 {
-  color: white;
-  font-size: 3.5em;
-  margin-top: .4em;
-  margin-bottom: 0em;
+  color: #8c97e1;
+  font-size: 3em;
+  text-transform: uppercase;
   letter-spacing: 3px;
-  opacity: 1;
-  text-shadow: 0 0 4px rgba(0,0,0, 0.7);
 }
 
-header p {
-  color: #fff;
-  font-size: 1.7em;
-  padding-bottom: 1.3em;
-  padding-top: .5em;
-  opacity: .8;
+.red-banner {
+  background-color: red;
+  padding: 5em;
 }
 
 section h1 {
@@ -151,6 +144,15 @@ footer hr {
   .grid-5 { width: 83.3333333%; }
   .grid-6 { width: 100%; }
 
+}
+
+.the-grid [class*='grid'] span {
+  background-color: #e5e5e5;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  margin-top: 15px;
+  font-family: monospace;
 }
 
 
