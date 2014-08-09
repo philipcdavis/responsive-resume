@@ -81,6 +81,10 @@ header a.button {
 }
 
 @media screen and (min-width: 40em) {
+  header {
+    padding: 6em 0;
+  }
+  
   header a.button {
     width: 48%;
   }
@@ -92,7 +96,7 @@ header a.button:hover {
 
 .header-container {
   width: 90%;
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
