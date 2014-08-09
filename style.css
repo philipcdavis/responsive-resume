@@ -49,7 +49,7 @@ header {
   background-size: cover;
   text-align: center;
   height: 520px;
-  padding: 100px 0;
+  padding: 4em 0;
 }
 
 header h1 {
@@ -58,17 +58,19 @@ header h1 {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 6px;
-  margin-bottom: 35px;
+  margin-bottom: 5%;
 }
 
 header a.button {
+  display: block;
+  float: left;
   background-color: #2e3342;
   opacity: .7;
   -webkit-transition: opacity 200ms ease;
     -moz-transition: opacity 200ms ease;
       transition: opacity 200ms ease; 
-  width: 130px;
-  margin: 40px 10px;
+  width: 100%;
+  margin: 1%;
   font-family: helvetica, arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -78,8 +80,20 @@ header a.button {
   color: #b1bfe8;
 }
 
+@media screen and (min-width: 40em) {
+  header a.button {
+    width: 48%;
+  }
+}
+
 header a.button:hover {
   opacity: 1;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -89,7 +103,7 @@ header a.button:hover {
 
 .red-banner {
   background-color: #ed5c48;
-  padding: 3em;
+  padding: 3em 0;
   z-index: 3;
   position: relative;
 }
@@ -97,7 +111,7 @@ header a.button:hover {
 .red-banner p {
   color: #ffdfdb;
   margin: 0 auto;
-  line-height: 2; 
+  line-height: 1.8; 
 }
 
 .red-banner a {
@@ -126,8 +140,6 @@ header a.button:hover {
 }
 
 section h1 {
-  font-size: 2.2em;
-  line-height: .8em;
   margin-bottom: .6em;
 }
 
@@ -153,6 +165,16 @@ footer hr {
 
 .center {
   text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  .red-banner p {
+    line-height: 2;
+  }
+  
+  section h1 {
+    font-size: 2.2em;
+  }
 }
 
 /* ------------------- Grid -------------------*/
@@ -224,12 +246,14 @@ footer hr {
   color: #2e3342;
   opacity: .7;
   font-size: 5em;
-  position: relative;
-  top: 100px;
+  position: absolute;
+  top: 460px;
   padding: 10px;
   display: block;
-  width: 100px;
-  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
   text-align: center;
   z-index: 2;
   -webkit-transition: all 200ms ease;
@@ -239,7 +263,7 @@ footer hr {
 }
 
 .octo:hover {
-  top: 65px;
+  top: 420px;
   opacity: 1;
   color: #2e3342;
 }
@@ -247,7 +271,7 @@ footer hr {
 
 .small-container {
   max-width: 37em;
-  width: 90%;
+  width: 92%;
   margin: 0 auto;
 }
 
@@ -268,6 +292,7 @@ footer hr {
 }
 
 .social h3 {
+  font-size: 1.1em;
   margin-bottom: 30px;
 }
 
@@ -291,6 +316,7 @@ footer hr {
  }
 
 @media screen and (min-width: 40em) {
+
   .big-show {
     display: block;
   }  
