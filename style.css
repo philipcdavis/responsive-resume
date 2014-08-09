@@ -43,23 +43,51 @@ hr {
 }
 
 header {
-  background-color: #333f6c;
+  background-color: #444854;
   background-position: center center;
   background-size: cover;
   text-align: center;
-  height: 500px;
-  padding-top: 50px;
+  height: 540px;
+  padding: 100px 0;
 }
 
 header h1 {
-  color: #8c97e1;
-  font-size: 3em;
+  color: #ededed;
+  font-size: 1.5em;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
+  margin-bottom: 35px;
 }
 
+header a.button {
+  background-color: #2e3342;
+  width: 130px;
+  margin: 40px 10px;
+  font-family: helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: .7em;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: #b1bfe8;
+  opacity: .7;
+  -webkit-transition: opacity 200ms ease;
+  -moz-transition: opacity 200ms ease;
+    transition: opacity 200ms ease; 
+}
+
+header a.button:hover {
+  opacity: 1;
+}
+
+.logo {
+  width: 130px;
+}
+
+
 .red-banner {
-  background-color: red;
+  background-color: #ed5c48;
   padding: 5em;
   z-index: 3;
   position: relative;
@@ -160,7 +188,7 @@ footer hr {
 .octo {
   font-size: 5em;
   position: relative;
-  top: 270px;
+  top: 140px;
   display: block;
   width: 100px;
   margin: 0 auto;
@@ -173,6 +201,6 @@ footer hr {
 }
 
 .octo:hover {
-  top: 250px;
+  top: 120px;
 }
 
