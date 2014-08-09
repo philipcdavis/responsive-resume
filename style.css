@@ -1,5 +1,3 @@
-/* Border Box
--------------------------------------------------------------- */
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
@@ -82,7 +80,7 @@ section h1 {
 }
 
 /* Same font-size and line-height as p element */
-section ul li {
+section ul li, section ol li {
   font-size: 1em;
   margin-left: -10px;
   line-height: 1.8;
@@ -201,27 +199,27 @@ footer hr {
   }
 }
 
-/* Experiance */
-.experiance [class*="row"] {
+/* Experience */
+.experience [class*="row"] {
   border-bottom: dotted 1px #ccc;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-.experiance h2 {
+.experience h2 {
   margin-bottom: 0;
 }
 
-.experiance h2, .experiance p {
+.experience h2, .experience p {
   text-align: center;
 }
 
-.experiance [class*="row"]:last-of-type {
+.experience [class*="row"]:last-of-type {
   border: none;
 }
 
 @media screen and (min-width: 40em) {
-  .experiance h2, .experiance p {
+  .experience h2, .experience p {
     text-align: left;
   }
 }
