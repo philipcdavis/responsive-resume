@@ -62,6 +62,10 @@ header h1 {
 
 header a.button {
   background-color: #2e3342;
+  opacity: .7;
+  -webkit-transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+      transition: opacity 200ms ease; 
   width: 130px;
   margin: 40px 10px;
   font-family: helvetica, arial, sans-serif;
@@ -71,10 +75,6 @@ header a.button {
   border-radius: 20px;
   padding: 10px 30px;
   color: #b1bfe8;
-  opacity: .7;
-  -webkit-transition: opacity 200ms ease;
-  -moz-transition: opacity 200ms ease;
-    transition: opacity 200ms ease; 
 }
 
 header a.button:hover {
@@ -186,9 +186,12 @@ footer hr {
 }
 
 .octo {
+  color: #2e3342;
+  opacity: .7;
   font-size: 5em;
   position: relative;
-  top: 140px;
+  top: 125px;
+  padding: 10px;
   display: block;
   width: 100px;
   margin: 0 auto;
@@ -201,6 +204,8 @@ footer hr {
 }
 
 .octo:hover {
-  top: 120px;
+  top: 85px;
+  opacity: 1;
+  color: #2e3342;
 }
 
