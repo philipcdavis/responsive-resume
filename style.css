@@ -61,6 +61,8 @@ header h1 {
 .red-banner {
   background-color: red;
   padding: 5em;
+  z-index: 3;
+  position: relative;
 }
 
 section h1 {
@@ -155,5 +157,22 @@ footer hr {
   font-family: monospace;
 }
 
+.octo {
+  font-size: 5em;
+  position: relative;
+  top: 270px;
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+  -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+      transition: all 200ms ease; 
+  
+}
 
+.octo:hover {
+  top: 250px;
+}
 
