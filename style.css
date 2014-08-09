@@ -8,11 +8,12 @@ body {
   font: 100% sans-serif;
   margin: 0em;
   background-color: #fff;
-  color: #666;
+  color: #444956;
 }
 
 h1, h2, h3 {
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -38,16 +39,16 @@ img {
 hr {
   border-top: 1px solid #ccc;
   border-bottom: none;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 header {
-  background-color: #444854;
+  background-color: #444956;
   background-position: center center;
   background-size: cover;
   text-align: center;
-  height: 540px;
+  height: 520px;
   padding: 100px 0;
 }
 
@@ -88,9 +89,40 @@ header a.button:hover {
 
 .red-banner {
   background-color: #ed5c48;
-  padding: 5em;
+  padding: 3em;
   z-index: 3;
   position: relative;
+}
+
+.red-banner p {
+  color: #ffdfdb;
+  margin: 0 auto;
+  line-height: 2; 
+}
+
+.red-banner a {
+  color: white;
+}
+
+.red-banner p a:hover {
+  text-decoration: underline;
+}
+
+.red-banner a i {
+  font-size: 3em;
+  color: #d4402c;
+  position: relative;
+  -webkit-transition: color 200ms ease;
+    -moz-transition: color 200ms ease;
+      transition: color 200ms ease; 
+  top: 20px;
+  display: block;
+  text-align: center;
+}
+
+.red-banner a i:hover {
+  color: #b92d1a;
+ 
 }
 
 section h1 {
@@ -100,15 +132,18 @@ section h1 {
 }
 
 /* Same font-size and line-height as p element */
-section ul li {
+section ul li, section ol li {
   font-size: 1em;
   margin-left: -10px;
   line-height: 1.8;
 }
 
 footer {
-  margin-bottom: 1em;
+  padding: 1em;
   color: #888;
+  background-color: #eee;
+  margin-top: 2em;
+  margin-bottom: 0;
 }
 
 footer hr {
@@ -190,7 +225,7 @@ footer hr {
   opacity: .7;
   font-size: 5em;
   position: relative;
-  top: 125px;
+  top: 100px;
   padding: 10px;
   display: block;
   width: 100px;
@@ -204,8 +239,63 @@ footer hr {
 }
 
 .octo:hover {
-  top: 85px;
+  top: 65px;
   opacity: 1;
   color: #2e3342;
 }
 
+
+.small-container {
+  max-width: 37em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.center-container {
+  max-width: 30em;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.setup {
+  padding-top: 4em;
+}
+
+.social {
+  line-height: 1.5;
+  margin-bottom: 4em;
+}
+
+.social h3 {
+  margin-bottom: 30px;
+}
+
+.social a.sharing {
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin: 7px;
+  color: #444;
+  opacity: .8;
+  width: 100%;
+  display: block;
+}
+
+.social a.sharing:hover {
+  opacity: 1;
+}
+
+.big-show {
+    display: none;
+ }
+
+@media screen and (min-width: 40em) {
+  .big-show {
+    display: block;
+  }  
+  
+  .social a.sharing {
+    display: inline;
+  }
+}

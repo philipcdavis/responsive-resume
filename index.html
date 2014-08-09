@@ -24,36 +24,43 @@
 		<img class="logo" src="img/logo.png">
 		<h1>Responsive Resume</h1>
 		<a href="#" class="button">Preview</a>
-		<a href="#" class="button">Download</a>
+		<a href="https://github.com/philipcdavis/responsive-resume/archive/master.zip" class="button">Download</a>
 		
-		<a href="#" class="octo"><i class="icon-github2"></i></a>
+		<a href="https://github.com/philipcdavis/responsive-resume" class="octo"><i class="icon-github2"></i></a>
 	</header>
 	
 	<section class="red-banner">
-		<h1>Welcome!</h1>
-		<p>
-			This is a good place to introduce yourself. What do you love to do? Where are you from? What is your current job?
-			This also might be a good place to link to your resume, email, or portfolio as well.
-		</p>
+		<div class="small-container">
+			<h1>Beautiful, Fast & Flexible.</h1>
+			<p>
+				It's time to bring your resume into the 21st century. This template is totally free and is meant to help you create a mobile optimized web presence. If you need help getting set up check out the instructions below, or read the <a href="https://github.com/philipcdavis/responsive-resume">documentation on github</a>.
+			</p>
+			<a href="#start"><i class="icon-arrow-down"></i></a>
+		</div>
 	</section>
 	
-	<div class="container">
+	<div class="container" id="start">
 		
-		<section class="setup">
-			<h1>Quick Setup</h1>
-			<ol>
-				<li>1. Something</li>
-				<li>2. Something</li>
-				<li>3. Something</li>
-				<li>4. Something</li>
-			</ol>
+		<section  class="setup">
+			<div class="small-container">
+				<h1>Getting Started</h1>
+				<ol>
+					<li>Download and extract everything.</li>
+					<li>Update background.jpg with a dapper picture.</li>
+					<li>Edit index.html to put in your information and customize.</li>
+					<li>Get it online! You can do this for free using Github Pages.</li>
+				</ol>
+			</div>
 		</section>
 		
 		<hr>
 		
 		<section class="the-grid">
-			<h1>The Grid</h1>
-			<p>Something</p>
+		<div class="center-container">
+				<h1>The Grid</h1>
+				<p>Responsive Resume uses a simple 6 column grid. 
+					Below is a reference of the class names used.
+		</div>
 			
 			<div class="row">
 				<div class="grid-1"><span>.grid-1</span></div>
@@ -89,15 +96,41 @@
 				<div class="grid-6"><span>.grid-6</span></div>
 			</div>
 		</section>
-		
-		
-		<!--Social Footer-->
-		<footer class="center">
-			<hr>
-			<span>&copy; Your Name 2014</span>
-		</footer>
-		
+		<hr>
+			
+		<section class="social">
+			<div class="center-container">
+				<h3>If you have questions or comments let me know! <br class="big-show">I would love to see what you create.</h3>
+				<a class="sharing" href="https://twitter.com/share?text=Build your own responsive resume" class="sharing-link" title="Share result on Twitter">
+					Share on Twitter
+				</a>
+				<a  class="sharing" href="mailto:phillysoul11@gmail.com?Subject=Responsive Resume">Send an Email</a>
+			</div>
+		</section>
 	</div><!-- End Container -->
+	
+	<!--Footer-->
+	<footer class="center">
+		<span>Built by Philip Davis.</span>
+	</footer>
+	
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script>
+		$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+		  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+			  $('html,body').animate({
+				scrollTop: target.offset().top
+			  }, 500);
+			  return false;
+			}
+		  }
+		});
+	  });
+	</script>
 	
 </body>
 </html>
