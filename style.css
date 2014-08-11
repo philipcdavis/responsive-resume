@@ -270,6 +270,13 @@ footer hr {
   margin-bottom: 3em;
 }
 
+.spotlight img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .spotlight h1 {
   color: #e4382c;
   text-align: center;
