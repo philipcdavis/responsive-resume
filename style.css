@@ -253,16 +253,14 @@ footer hr {
   position: absolute;
   top: 460px;
   padding: 10px;
-  display: block;
-  text-align: center;
-  position: absolute;
   left: 0;
   right: 0;
-  text-align: center;
   z-index: 2;
   -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
-      transition: all 200ms ease; 
+      transition: all 200ms ease;
+  width: 200px;
+  margin: 0 auto;
   
 }
 
