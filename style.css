@@ -75,7 +75,7 @@ header p {
 
 section h1 {
   font-size: 1.8em;
-  line-height: .8em;
+  line-height: 1em;
   margin-bottom: .6em;
 }
 
@@ -177,7 +177,7 @@ footer hr {
 
 /* Gallery */
 
-.gallery [class*="grid"] {
+.gallery [class*="grid-2"], .gallery [class*="grid-3"]  {
   margin-bottom: 1%;
   margin-top: 1%;
   width: 50%;
@@ -198,6 +198,7 @@ footer hr {
     width: 33.3333333%;
   }
 }
+
 
 /* Experience */
 .experience [class*="row"] {
@@ -260,14 +261,15 @@ footer hr {
   font-style: italic;
   color: #888;
   margin-top:  -15px;
-  margin-bottom: 40px;
 }
 
 /* Spotlight */
 .spotlight {
   background-color: #f3e2d8;
   padding: 3em 1em;
+  margin-top: 3em;
   margin-bottom: 3em;
+  text-align: center;
 }
 
 .spotlight img {
@@ -280,16 +282,14 @@ footer hr {
 
 .spotlight h1 {
   color: #e4382c;
-  text-align: center;
 }
 
 .spotlight p {
   color: #6d5e53;
   font-size: 1.1em;
-  text-align: center;
 }
 
-.spotlight button {
+.spotlight a {
   background-color: transparent;
   border: 3px solid #e4382c;
   padding: 7px 35px;
@@ -297,20 +297,18 @@ footer hr {
   color: #e4382c;
   font-size: 1.1em;
   opacity: .8;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 10px;
-  display: block;
 }
 
-.spotlight button:hover {
+.spotlight a:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 40em) {
   .spotlight {
     padding: 6em;
+    text-align: left;
   }
   
   .spotlight h1, .spotlight p {
