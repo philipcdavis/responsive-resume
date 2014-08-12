@@ -1,36 +1,62 @@
 # Responsive Resume
 
 ##Introduction
-This is a simple template for you to use to create mobile first responsive resumes.
-Feel free to download and use to suit your needs. No attribution required - though I would love to see what you make!
-If you have any questions feel free to contact me via twitter <a href="http://www.twitter.com/philipcdavis">@philipcdavis<a>
+This is a simple template to help you create a mobile first responsive resume.
+Feel free to download and use to suit your needs. No attribution is required, though I would love to see what you make!
+If you have any questions feel free to contact me via twitter <a href="http://www.twitter.com/philipcdavis">@philipcdavis<a>.
+if you notice anything that is broken or that could be improved you can open an issue.
 
-##Grid
-The 6 column mobile first grid is based off of Dave Rupert's <a href="https://github.com/davatron5000/Foldy960">Foldy960</a> template.
-Feel free to customize the image grid, as well as any other section to fit your needs.
 
-##Setup
-Setup should be super fast. If it ever takes too long, let me know.
 
+##Setup Instructions
 ###Step 1: Download and Extract
 <a href="https://github.com/philipcdavis/responsive-resume/archive/master.zip">Download</a> and extract the template and put it in whatever folder you want.
 
-###Step 2: Import your images
-Your images go into the `img` folder. The dimensions I use are 300x225px but you can make them whatever size you want as long as they are consistent with each other. If you don't want to have a 3 column layout feel free to utilize the grids
-Make sure to include an image of yourself. I've named it `profile.jpg` but you can name it anything you like as long as it is updated in the `index.html` file.
+###Step 2: Import a headshot
+Once you have a picture you want to use import it into the /img folder and override the background.jpg file.
+This image is set as the background image of the <header> in style.css, use a high quality photo with padding on all sides for best results.
 
 ###Step 3: Edit the index.html file
-* Open up the index.html file in your text editor and begin to replace the text in the welcome section with whatever you want.
-* Edit the images by pointing to the names you have designated inside the `img` folder. 
-* In the skills section, add your skills in between the `li` tags.
-* For the "Experience" section, I try to keep this short just highlighting recent work and linking to your full pdf resume (make sure to replace) and any other important links as well. 
-* Update the footer with the correct links. If you have lots of social links to share, I suggest using icons like those from <a href="http://icomoon.io/">IcoMoon</a>
+Using your favorite text editor open your index.html file to fill out content, update your name, skills, and information.
+Feel free to remove or rearrange blocks to fit your needs.
 
-### Optional - Customize the style
-If you would like to customize the style you should find it fairly easy to do. The `style.css` file is where you can go to:
-* Change the background or header color
-* Change the fonts
-* Edit the avatar syle
-and much more. Feel free to customize and tweak for your own needs.
+###Step 4: Host your site
+Github pages gives your this option for free and there is plenty of documentation on how to get set up.
+You can also use a custom domain with your site.
 
-All the styles should be self explanatory or commented. If you are confused by anything please let me know by opening an <a href="https://github.com/philipcdavis/responsive-resume/issues">issue<a>.
+
+
+##Grid
+The 6 column mobile first grid is used by wrapping each row with a .row class.
+Each row should have grid units that add up to 6 (with the exception of the Gallery).
+
+##Custom Blocks
+This template comes with multiple componants that can be removed or rearranged to suit your particular needs.
+These are build on top of the grid, but container some useful layouts that you can use depending on your situation.
+Each block is contained by the <section> tags. With some blocks it is helpful to include a seperating <hr> tag.
+Below you will find information for each block. If you notice anything that should be improved please open an issue.
+
+###Gallery
+The Gallery is useful for displaying a grid of images. It is similar to the normal grid with two exceptions.
+1 Each grid item has bottom and top margin.
+2. The .grid-2 and .grid-3 classes default at a two column grid instead of the single one column grid.
+For the gallery you can wrap everything inside a row tag.
+
+###Testimonials
+This section is great for highlighting some things other people have said about you.
+Your images here have a fixed height in order to keep everything aligned.
+
+###Spotlight
+The Spotlight section is useful for highlighting one project or accomplishment.
+In order to keep the themeing consistant with the project you are able to edit the .spotlight classes in style.css.
+The image you use for an icon can be transparent, it will be centered and restricted within the .grid-3 class.
+It's important that this block is outside of the container so that the bar can extend the full width of the screen.
+There is a container inside of the block in order to keep the contents, such as the image, text and buttons container in the same grid.
+
+###Education
+This section is fairly self explanatory.
+You want to watch out for word-wrap issues that cause text to look awkward, if you need more room you can change the <h2> tag to a <h3>.
+
+###Experiance
+This is a great section to bring some of the more formal resume elements onto the web.
+All the jobs are seperated by a bottom-border with the exception of the last one.
