@@ -4,7 +4,7 @@
 This is a simple template to help you create a mobile first responsive resume.
 Feel free to download and use to suit your needs. No attribution is required, though I would love to see what you make!
 If you have any questions feel free to contact me via twitter <a href="http://www.twitter.com/philipcdavis">@philipcdavis<a>.
-if you notice anything that is broken or that could be improved you can <a href="">open an issue</a>.
+if you notice anything that is broken or that could be improved you can <a href="https://github.com/philipcdavis/responsive-resume/issues">open an issue</a>.
 
 
 
@@ -34,7 +34,7 @@ You can view the grid with its classes on the <a href="http://philipcdavis.com/r
 This template comes with multiple componants that can be removed or rearranged to suit your particular needs.
 These are build on top of the grid, but container some useful layouts that you can use depending on your situation.
 Each block is contained by the `<section>` tags. With some blocks it is helpful to include a seperating `<hr>` tag.
-Below you will find information for each block. If you notice anything that should be improved please open an issue.
+Below you will find information for each block. If you notice anything that should be improved please <a href="https://github.com/philipcdavis/responsive-resume/issues">open an issue</a>.
 
 ####Gallery
 The Gallery is useful for displaying a grid of images. It is similar to the normal grid with two exceptions.
