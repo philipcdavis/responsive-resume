@@ -49,7 +49,7 @@ header {
   background-size: cover;
   text-align: center;
   height: 520px;
-  padding: 4em 0;
+  padding: 5em 0;
 }
 
 header h1 {
@@ -69,7 +69,7 @@ header a.button {
   -webkit-transition: opacity 200ms ease;
     -moz-transition: opacity 200ms ease;
       transition: opacity 200ms ease; 
-  width: 100%;
+  width: 48%;
   margin: 1%;
   font-family: helvetica, arial, sans-serif;
   text-transform: uppercase;
