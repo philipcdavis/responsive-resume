@@ -33,7 +33,7 @@ You can view the grid with its classes on the <a href="http://philipcdavis.com/r
 ##Custom Blocks
 This template comes with multiple componants that can be removed or rearranged to suit your particular needs.
 These are build on top of the grid, but container some useful layouts that you can use depending on your situation.
-Each block is contained by the `<section>` tags. With some blocks it is helpful to include a seperating <hr> tag.
+Each block is contained by the `<section>` tags. With some blocks it is helpful to include a seperating `<hr>` tag.
 Below you will find information for each block. If you notice anything that should be improved please open an issue.
 
 ####Gallery
