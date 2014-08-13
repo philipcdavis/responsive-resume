@@ -38,8 +38,10 @@ Below you will find information for each block. If you notice anything that shou
 
 ####Gallery
 The Gallery is useful for displaying a grid of images. It is similar to the normal grid with two exceptions.
-1 Each grid item has a top and bottom margin.
+
+1. Each grid item has a top and bottom margin.
 2. The `.grid-2` and `.grid-3` classes have a default two column layout instead of normal one column layout.
+
 For the gallery you can wrap everything inside a `.row` class.
 
 ####Testimonials
@@ -49,9 +51,8 @@ These images have a fixed height in order to keep everything aligned.
 ####Spotlight
 The Spotlight section is useful for highlighting one project or accomplishment.
 In order to keep the themeing consistant with the project you are able to edit the `.spotlight` classes in style.css.
-The image you use for an icon can be transparent, it will be centered and restricted within the .grid-3 class.
+The image you use for an icon can be transparent, it will be centered and restricted within the `.grid-3` class.
 It's important that this block is outside of the container so that the bar can extend the full width of the screen.
-There is a container inside of the block in order to keep the contents, such as the image, text and buttons container in the same grid.
 
 ####Education
 This section is fairly self explanatory.
