@@ -42,7 +42,9 @@ hr {
 }
 
 header {
-  background: url(img/background.jpg) no-repeat;
+  background-color: #333;
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   margin-bottom: 4em;
