@@ -1,0 +1,46 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 100%;
+  margin: 0em;
+  background-color: #fff;
+  color: #212121;
+}
+
+h1, h2 {
+  font-weight: 900;
+}
+
+a {
+  color: #3d6dbe;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #6594e0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.8;
+  margin-top: 0em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  margin-top: 100px;
+}
