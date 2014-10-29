@@ -10,8 +10,15 @@ body {
   color: #212121;
 }
 
-h1, h2 {
+h1 {
   font-weight: 900;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.3em;
 }
 
 a {
@@ -27,7 +34,9 @@ a:hover {
 p {
   font-size: 1em;
   line-height: 1.8;
-  margin-top: 0em;
+  margin-top: 0;
+  margin-bottom: 0em;
+  max-width: 650px;
 }
 
 img {
@@ -43,4 +52,34 @@ img {
 
 header {
   margin-top: 100px;
+}
+
+ul li {
+  line-height: 1.8;
+}
+
+.float-right {
+  float: right;
+}
+
+header p {
+  margin-top: 0;
+  line-height: .5;
+}
+
+header h1 {
+  padding-top: 30px;
+}
+
+.portrait {
+  width: 120px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 30px;
+}
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
 }
