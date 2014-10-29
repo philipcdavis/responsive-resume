@@ -10,9 +10,9 @@ body {
   color: #212121;
 }
 
-h1 {
+h1, h2 {
   font-weight: 900;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 
@@ -43,11 +43,8 @@ img {
   max-width: 100%;
 }
 
-.container {
-  max-width: 800px;
-  width: 92%;
-  margin-left: auto;
-  margin-right: auto;
+section {
+  margin-bottom: 40px;
 }
 
 header {
@@ -56,6 +53,7 @@ header {
 
 ul li {
   line-height: 1.8;
+  max-width: 610px;
 }
 
 .float-right {
@@ -68,18 +66,75 @@ header p {
 }
 
 header h1 {
-  padding-top: 30px;
+  padding-top: 2px;
+  margin-bottom: 10px;
 }
 
 .portrait {
-  width: 120px;
+  width: 70px;
   border-radius: 5px;
   float: left;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .cf:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* The Grid */
+
+.container {
+  max-width: 800px;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  clear: both;
+  margin-right: -1%;
+  margin-left:  -1%;
+  
+}
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ */
+.row {
+  *zoom: 1;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6 {
+  float: left;
+  width:100%;
+  padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-1 { width: 16.6666666%; }
+  .grid-2 { width: 33.3333333%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 66.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
+
 }
