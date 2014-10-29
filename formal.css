@@ -44,11 +44,12 @@ img {
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 header {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 ul li {
@@ -81,6 +82,10 @@ header h1 {
   content: "";
   display: table;
   clear: both;
+}
+
+.light {
+  color: #888;
 }
 
 /* The Grid */
