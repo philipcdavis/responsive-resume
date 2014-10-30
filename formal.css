@@ -106,10 +106,6 @@ section {
   margin-bottom: 50px;
 }
 
-.float-right {
-  float: right;
-}
-
 .cf:after {
   content: "";
   display: table;
