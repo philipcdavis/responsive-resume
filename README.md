@@ -61,3 +61,8 @@ You want to watch out for word-wrap issues that cause text to look awkward, if y
 ####Experiance
 This is a great section to bring some of the more formal resume elements onto the web.
 All the jobs are seperated by a bottom-border with the exception of the last one.
+
+##Formal Theme
+The formal theme is useful if you are looking for a more traditional layout.
+The formal.html, and formal.css files are all you need to get started.
+If you are not using this theme feel free to remove it from your folder.
