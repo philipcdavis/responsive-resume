@@ -61,14 +61,34 @@ header h1 {
   margin-bottom: 5%;
 }
 
-header a.button {
+.btn {
+  -webkit-border-radius: 100px;
+    -moz-border-radius:  100px;
+      border-radius: 100px;
+  -webkit-transition: opacity 100ms ease;
+    -moz-transition: opacity 100ms ease;
+      transition: opacity 100ms ease;
+  padding: 10px 30px;
+  opacity: .8;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-red {
+  background-color: #ed5c48;
+  color: #fff;
+}
+
+.btn-red:hover {
+  color: white;
+}
+
+.btn-dark {
   display: block;
   float: left;
   background-color: #2e3342;
-  opacity: .7;
-  -webkit-transition: opacity 200ms ease;
-    -moz-transition: opacity 200ms ease;
-      transition: opacity 200ms ease; 
   width: 48%;
   margin: 1%;
   font-family: helvetica, arial, sans-serif;
@@ -76,7 +96,10 @@ header a.button {
   letter-spacing: 3px;
   font-size: .7em;
   border-radius: 20px;
-  padding: 10px 30px;
+  color: #b1bfe8;
+}
+
+.btn-dark:hover {
   color: #b1bfe8;
 }
 
@@ -85,13 +108,9 @@ header a.button {
     padding: 6em 0;
   }
   
-  header a.button {
+  header btn-dark {
     width: 48%;
   }
-}
-
-header a.button:hover {
-  opacity: 1;
 }
 
 .header-container {
@@ -298,19 +317,16 @@ footer hr {
   margin-bottom: 30px;
 }
 
-.social a.sharing {
+.btn-light {
   background-color: #eee;
-  border-radius: 20px;
-  padding: 10px 30px;
   margin: 7px;
   color: #444;
-  opacity: .8;
   width: 100%;
   display: block;
 }
 
-.social a.sharing:hover {
-  opacity: 1;
+.btn-light:hover {
+  color: #444;
 }
 
 .big-show {
@@ -323,7 +339,25 @@ footer hr {
     display: block;
   }  
   
-  .social a.sharing {
+  .btn-light {
     display: inline;
   }
 }
+
+/* Formal theme */
+.formal {
+  font-family: 'Merriweather', georgia, serif;
+}
+
+.formal h1 {
+  font-family: 'Merriweather', georgia, serif;
+  font-weight: 900;
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+.formal p {
+  margin-bottom: 50px;
+}
+
+
