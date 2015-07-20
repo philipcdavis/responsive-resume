@@ -4,7 +4,7 @@
 This is a simple template to help you create a mobile first responsive resume.
 Feel free to download and use to suit your needs. No attribution is required, though I would love to see what you make!
 If you have any questions feel free to contact me via twitter <a href="http://www.twitter.com/philipcdavis">@philipcdavis<a>.
-if you notice anything that is broken or that could be improved you can <a href="https://github.com/philipcdavis/responsive-resume/issues">open an issue</a>.
+If you notice anything that is broken or that could be improved you can <a href="https://github.com/philipcdavis/responsive-resume/issues">open an issue</a>.
 
 
 
@@ -31,9 +31,9 @@ Each row should have grid units that add up to 6 (with the exception of the Gall
 You can view the grid with its classes on the <a href="http://philipcdavis.com/responsive-resume/">homepage</a>.
 
 ##Custom Blocks
-This template comes with multiple componants that can be removed or rearranged to suit your particular needs.
-These are build on top of the grid, but container some useful layouts that you can use depending on your situation.
-Each block is contained by the `<section>` tags. With some blocks it is helpful to include a seperating `<hr>` tag.
+This template comes with multiple components that can be removed or rearranged to suit your particular needs.
+These are built on top of the grid, but container some useful layouts that you can use depending on your situation.
+Each block is contained by the `<section>` tags. With some blocks it is helpful to include a separating `<hr>` tag.
 Below you will find information for each block. If you notice anything that should be improved please <a href="https://github.com/philipcdavis/responsive-resume/issues">open an issue</a>.
 
 ####Gallery
@@ -50,17 +50,17 @@ These images have a fixed height in order to keep everything aligned.
 
 ####Spotlight
 The Spotlight section is useful for highlighting one project or accomplishment.
-In order to keep the themeing consistant with the project you are able to edit the `.spotlight` classes in style.css.
-The image you use for an icon can be transparent, it will be centered and restricted within the `.grid-3` class.
+In order to keep the theming consistent with the project you are able to edit the `.spotlight` classes in style.css.
+The image you use for an icon can be transparent; it will be centered and restricted within the `.grid-3` class.
 It's important that this block is outside of the container so that the bar can extend the full width of the screen.
 
 ####Education
-This section is fairly self explanatory.
+This section is fairly self-explanatory.
 You want to watch out for word-wrap issues that cause text to look awkward, if you need more room you can change the `<h2>` tag to a `<h3>`.
 
-####Experiance
+####Experience
 This is a great section to bring some of the more formal resume elements onto the web.
-All the jobs are seperated by a bottom-border with the exception of the last one.
+All the jobs are separated by a bottom-border with the exception of the last one.
 
 ##Formal Theme
 The formal theme is useful if you are looking for a more traditional layout.
