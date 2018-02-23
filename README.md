@@ -14,6 +14,7 @@ If you notice anything that is broken or that could be improved you can <a href=
 
 ####Step 2: Import a headshot
 Once you have a picture you want to use import it into the `/img` folder and override the `background.jpg` file.
+Copy either format.html/formal.css or modern.html/modern.css to index.html/style.css.
 This image is set as the background image of the `header` in style.css, use a high quality photo with padding on all sides for best results.
 
 ####Step 3: Edit the index.html file
